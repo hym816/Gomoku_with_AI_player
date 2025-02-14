@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/pic/pics">
+        <file>mainpagePic.jpg</file>
+        <file>IMG_0279.PNG</file>
+        <file>Background.jpg</file>
+        <file>ask.png</file>
+        <file>photo.png</file>
+        <file>Plants vs. Zombies-Faster.mp3</file>
+    </qresource>
+</RCC>

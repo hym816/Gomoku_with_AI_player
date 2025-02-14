@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>欢乐五子棋</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="Pic_MainPage">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>-20</y>
+      <width>751</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/pic/pics/mainpagePic.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_StartGame">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>360</y>
+      <width>200</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>200</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>200</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>开始游戏</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_ExitGame">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>440</y>
+      <width>200</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>200</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>200</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>退出游戏</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="Menu_GameMode">
+    <property name="title">
+     <string>游戏模式</string>
+    </property>
+    <addaction name="Action_LocalNon"/>
+    <addaction name="Action_Local"/>
+    <addaction name="Action_Entertain"/>
+    <addaction name="separator"/>
+    <addaction name="Action_AI"/>
+   </widget>
+   <widget class="QMenu" name="AboutMenu">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="Action_Info"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>游戏设置</string>
+    </property>
+    <addaction name="Action_Settings"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>声音设置</string>
+    </property>
+    <addaction name="musicon"/>
+    <addaction name="musicoff"/>
+   </widget>
+   <addaction name="Menu_GameMode"/>
+   <addaction name="menu"/>
+   <addaction name="AboutMenu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="StatusBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <action name="Action_LocalNon">
+   <property name="text">
+    <string>双人对战-无禁手</string>
+   </property>
+  </action>
+  <action name="Action_Local">
+   <property name="text">
+    <string>双人对战-有禁手</string>
+   </property>
+  </action>
+  <action name="Action_AI">
+   <property name="text">
+    <string>人机对弈-无禁手</string>
+   </property>
+  </action>
+  <action name="Action_Settings">
+   <property name="text">
+    <string>基本设置</string>
+   </property>
+  </action>
+  <action name="Action_NetworkSettings">
+   <property name="text">
+    <string>网络设置</string>
+   </property>
+  </action>
+  <action name="Action_Info">
+   <property name="text">
+    <string>创作人员</string>
+   </property>
+  </action>
+  <action name="musicon">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="musicoff">
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="Action_Entertain">
+   <property name="text">
+    <string>娱乐模式</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
